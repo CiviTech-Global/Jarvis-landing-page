@@ -36,6 +36,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -44,6 +45,7 @@ body {
   color: var(--color-text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 img {
@@ -251,11 +253,12 @@ h1, h2, h3, h4, h5, h6 {
 .hero-bg-glow {
   position: absolute;
   top: 50%;
-  right: 15%;
-  width: 500px;
-  height: 500px;
+  right: 0;
+  width: 60%;
+  max-width: 500px;
+  aspect-ratio: 1;
   background: radial-gradient(circle, rgba(255, 122, 47, 0.15) 0%, transparent 70%);
-  transform: translate(50%, -50%);
+  transform: translateY(-50%);
   pointer-events: none;
 }
 
@@ -356,6 +359,7 @@ h1, h2, h3, h4, h5, h6 {
 .overview {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .overview .container {
@@ -493,6 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== FEATURE SHOWCASE ===== */
 .showcase {
   padding: 100px 0;
+  overflow: hidden;
 }
 
 .feature-row {
@@ -663,19 +668,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ai-section .bg-orb-1 {
-  width: 400px;
-  height: 400px;
+  width: min(400px, 60vw);
+  height: min(400px, 60vw);
   background: var(--color-primary);
-  top: -100px;
-  left: -100px;
+  top: -50px;
+  left: -50px;
 }
 
 .ai-section .bg-orb-2 {
-  width: 300px;
-  height: 300px;
+  width: min(300px, 50vw);
+  height: min(300px, 50vw);
   background: var(--color-accent);
-  bottom: -50px;
-  right: -50px;
+  bottom: -30px;
+  right: -30px;
 }
 
 .ai-section .section-text {
@@ -849,8 +854,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 600px;
-  height: 600px;
+  width: 80%;
+  max-width: 600px;
+  aspect-ratio: 1;
   background: radial-gradient(circle, rgba(255, 122, 47, 0.1) 0%, transparent 70%);
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -1330,11 +1336,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== SECTION UTILITY ===== */
 .section {
   padding: 100px 0;
+  overflow: hidden;
 }
 
 .section-alt {
   padding: 100px 0;
   background: var(--color-surface);
+  overflow: hidden;
 }
 
 .section-text {
