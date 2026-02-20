@@ -2,7 +2,7 @@
 
 **Jarvis** is an AI-powered personal wellness and productivity assistant built by **CiviTech Official**. This repository contains the landing page for the Jarvis app — a modern, responsive single-page website that showcases the app's 17 features, company information, career opportunities, global presence, and investment opportunity.
 
-**Live Site:** [https://civitechofficial.org](https://civitechofficial.org)
+**Live Site:** [civitech-global.github.io/Jarvis-landing-page](https://civitech-global.github.io/Jarvis-landing-page/)
 
 ---
 
