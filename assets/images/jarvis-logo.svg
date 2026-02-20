@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="sparkle-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="50%" stop-color="#FF7A2F"/>
+      <stop offset="100%" stop-color="#FF5500"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- 4-point sparkle -->
+  <path d="M60 8 C62 40, 80 58, 112 60 C80 62, 62 80, 60 112 C58 80, 40 62, 8 60 C40 58, 58 40, 60 8Z"
+        fill="url(#sparkle-grad)" filter="url(#glow)"/>
+  <!-- Inner highlight -->
+  <path d="M60 28 C61 48, 72 59, 92 60 C72 61, 61 72, 60 92 C59 72, 48 61, 28 60 C48 59, 59 48, 60 28Z"
+        fill="#FFB347" opacity="0.4"/>
+</svg>
